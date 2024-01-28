@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gerenciador de Atividades</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1>Gerenciador de Atividades</h1>
+    <div class="container">
+      <div id="form">
+        <form id="activityForm">
+          <label for="day">Dia da Semana:</label>
+          <select id="day" name="day">
+            <option value="segunda-feira">Segunda-feira</option>
+            <option value="terca-feira">Terça-feira</option>
+            <option value="quarta-feira">Quarta-feira</option>
+            <option value="quinta-feira">Quinta-feira</option>
+            <option value="sexta-feira">Sexta-feira</option>
+            <option value="sabado">Sábado</option>
+            <option value="domingo">Domingo</option>
+          </select>
+
+          <label for="startTime">Horário de Início:</label>
+          <input type="time" id="startTime" name="startTime" />
+
+          <label for="endTime">Horário de Término:</label>
+          <input type="time" id="endTime" name="endTime" />
+
+          <label for="description">Descrição:</label>
+          <input type="text" id="description" name="description" />
+
+          <label for="activityType">Tipo de Atividade:</label>
+          <select id="activityType" name="activityType">
+            <option value="estudo">Estudo</option>
+            <option value="trabalho">Trabalho</option>
+            <option value="lazer">Lazer</option>
+            <option value="obrigacoes">Obrigações</option>
+            <option value="SaudeBemEstar">Saúde e Bem-Estar</option>
+            <option value="Alimentacao">Alimentação</option>
+            <option value="Leitura">Leitura</option>
+            <option value="Compromissos">Compromissos</option>
+            <option value="Socializacao">Socialização</option>
+            <option value="Viagens">Viagens</option>
+            <option value="Trabalho">Trabalho</option>
+            <option value="Programacao">Programação</option>
+          </select>
+
+          <button type="submit">Adicionar Atividade</button>
+        </form>
+      </div>
+
+      <div id="tabelaAtividades">
+        <label for="filtroDia">Escolha o Dia:</label>
+        <select id="filtroDia" name="filtroDia">
+          <option value="segunda-feira">Segunda-feira</option>
+          <option value="terca-feira">Terça-feira</option>
+          <option value="quarta-feira">Quarta-feira</option>
+          <option value="quinta-feira">Quinta-feira</option>
+          <option value="sexta-feira">Sexta-feira</option>
+          <option value="sabado">Sábado</option>
+          <option value="domingo">Domingo</option>
+        </select>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Horário</th>
+              <th>Descrição</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Linhas da tabela serão adicionadas aqui pelo JavaScript -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

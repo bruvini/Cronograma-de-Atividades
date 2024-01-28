@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #4CAF50;
+    animation: colorChange 5s infinite;
+}
+
+@keyframes colorChange {
+    0% { color: #4CAF50; }
+    50% { color: #45a049; }
+    100% { color: #4CAF50; }
+}
+
+@keyframes explosaoCores {
+    from { background-color: white; }
+    to { background-color: rainbow; } /* Substitua 'rainbow' por cores reais */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+#form {
+    width: 300px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#form label {
+    margin-top: 10px;
+}
+
+#form input[type="text"],
+#form input[type="time"],
+#form select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+#form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#form button:hover {
+    background-color: #45a049;
+}
+
+#tabelaAtividades {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#tabelaAtividades table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#tabelaAtividades th, #tabelaAtividades td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#tabelaAtividades th {
+    background-color: #f4f4f4;
+}
+
+#tabelaAtividades tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+#filtroDia {
+    margin-bottom: 10px;
+    align-self: flex-start;
+}
